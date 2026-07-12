@@ -33,7 +33,7 @@ export default function Home() {
             <p className="privacy"><span>●</span> Можно участвовать анонимно и начать просто с чтения</p>
           </div>
           <div className="visual" aria-label="Логотип сообщества — маяк среди волн">
-            <div className="sun"/><img src="/mayak-logo.jpg" alt="Маяк поддержки — логотип с маяком"/>
+            <div className="logoCircle"><img src="/mayak-logo.jpg" alt="Маяк поддержки — логотип с маяком"/></div>
             <p>Свет виден даже<br/>в самую долгую ночь</p>
           </div>
         </div>
@@ -54,7 +54,6 @@ export default function Home() {
       <section className="facts wrap" id="depression">
         <div className="factsHead"><div><p className="eyebrow">Важно знать</p><h2>О депрессии —<br/>честно и спокойно</h2></div><p>Депрессия может случиться с любым человеком. Её симптомы бывают разными и могут длиться неделями. Точный диагноз ставит только специалист.</p></div>
         <div className="factList">{facts.map(([title,text], i) => <article key={title}><b>0{i+1}</b><h3>{title}</h3><p>{text}</p></article>)}</div>
-        <aside className="notice"><b>Сообщество не заменяет медицинскую помощь.</b><span>Если вам тяжело, обратитесь к врачу или психологу. Если есть риск причинить вред себе или кому-то — позвоните 112 или в местную экстренную службу прямо сейчас.</span><a href="tel:112">Позвонить 112</a></aside>
       </section>
 
       <section className="join" id="join">
