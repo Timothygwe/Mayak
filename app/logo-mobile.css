@@ -50,6 +50,16 @@
   grid-column: 1 / -1;
 }
 
+.programs article {
+  display: flex;
+  flex-direction: column;
+}
+
+.programs .placeholder {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
 .programs h4 {
   margin: 22px 0 8px;
   color: #633f32;
