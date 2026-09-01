@@ -46,6 +46,27 @@
   border-radius: 50%;
 }
 
+.programs .groupTherapy {
+  grid-column: 1 / -1;
+}
+
+.programs h4 {
+  margin: 22px 0 8px;
+  color: #633f32;
+  font-family: Nunito, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.groupTherapy ul {
+  columns: 2;
+  column-gap: 42px;
+}
+
+.groupTherapy li {
+  break-inside: avoid;
+  margin-bottom: 12px;
+}
+
 @media (max-width: 600px) {
   body {
     overflow-x: hidden;
@@ -139,5 +160,10 @@
   .rules div {
     grid-template-columns: 46px 1fr;
     gap: 8px;
+  }
+
+  .groupTherapy ul {
+    columns: 1;
+    padding-left: 20px;
   }
 }
