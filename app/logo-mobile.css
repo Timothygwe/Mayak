@@ -57,7 +57,13 @@
 
 .programs .placeholder {
   margin-top: auto;
-  padding-top: 16px;
+  padding: 16px 15px;
+  line-height: 1.55;
+}
+
+.programs h3 {
+  line-height: 1.22;
+  letter-spacing: 0.018em;
 }
 
 .programs h4 {
