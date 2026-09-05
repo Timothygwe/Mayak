@@ -31,7 +31,6 @@ body {
 
 :root {
   --button-move-speed: 220ms;
-  --button-shine-speed: 520ms;
   --button-pulse-speed: 1040ms;
 }
 
@@ -134,27 +133,6 @@ h3,
   transition: transform var(--button-move-speed) ease, box-shadow var(--button-move-speed) ease, background-color var(--button-move-speed) ease;
 }
 
-.button::after,
-.navCta::after,
-.mobileJoin::after {
-  position: absolute;
-  top: -70%;
-  bottom: -70%;
-  left: -35%;
-  width: 22%;
-  background: rgba(255, 255, 255, 0.3);
-  content: "";
-  transform: rotate(18deg) translateX(-220%);
-  transition: transform var(--button-shine-speed) ease;
-  pointer-events: none;
-}
-
-.button:hover::after,
-.navCta:hover::after,
-.mobileJoin:hover::after {
-  transform: rotate(18deg) translateX(720%);
-}
-
 .button:hover,
 .navCta:hover,
 .mobileJoin:hover {
@@ -238,20 +216,6 @@ h3,
   height: 5px;
   background: linear-gradient(90deg, #ffd8b1, #e07a5f, #ffd8b1);
   content: "";
-}
-
-.programs .button::after {
-  animation: program-button-shine 3.12s ease-in-out infinite;
-}
-
-@keyframes program-button-shine {
-  0%, 45% {
-    transform: rotate(18deg) translateX(-220%);
-  }
-
-  72%, 100% {
-    transform: rotate(18deg) translateX(720%);
-  }
 }
 
 .programs article:hover {
@@ -1219,7 +1183,4 @@ footer {
     animation: none;
   }
 
-  .programs .button::after {
-    animation: none;
-  }
 }
