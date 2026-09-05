@@ -31,6 +31,7 @@ const rules = [
 export default function Home() {
   return (
     <main>
+      <div className="scrollProgress" aria-hidden="true"/>
       <header className="nav wrap">
         <a className="brand" href="#top"><span className="brandMark">М</span><span>Маяк поддержки</span></a>
         <nav aria-label="Основная навигация"><a href="#community">Сообщество</a><a href="#join">Как вступить</a><a href="#newcomers">Новичкам</a><a href="#therapy">Терапия</a></nav>
@@ -63,6 +64,8 @@ export default function Home() {
 
       <section className="contacts section" id="contacts"><div className="wrap contactGrid"><div><p className="eyebrow">Контакты</p><h2>Оставайтесь<br/>на связи</h2><p>Полный раздел контактов и форма обратной связи появятся после запуска.</p></div><div className="socials"><a href={GEMSPACE} target="_blank" rel="noreferrer"><b>Gem Space</b><span>Основная группа сообщества →</span></a><a href={TELEGRAM} target="_blank" rel="noreferrer"><b>Telegram</b><span>Новости и анонсы →</span></a><a href={INSTAGRAM} target="_blank" rel="noreferrer"><b>Instagram</b><span>Психолог о депрессии →</span></a><a href={PERSONAL_GEMSPACE} target="_blank" rel="noreferrer"><b>Лидия в Gem Space</b><span>Личная терапия и вопросы →</span></a></div></div></section>
 
+      <a className="backToTop" href="#top" aria-label="Вернуться наверх">↑</a>
+      <a className="mobileJoin" href={GEMSPACE} target="_blank" rel="noreferrer">Присоединиться к группе</a>
       <footer className="wrap"><div className="brand"><span className="brandMark">М</span><span>Маяк поддержки</span></div><p>Сообщество взаимопомощи при депрессии</p><p>© 2026 · mayak-podderzhki.ru</p></footer>
     </main>
   );
