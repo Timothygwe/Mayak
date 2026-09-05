@@ -252,14 +252,40 @@ h3,
   font-size: 18px;
 }
 
+.groupTherapy > p:first-of-type {
+  max-width: 720px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.groupTherapy h4 {
+  margin: 36px 0 14px;
+  padding-top: 30px;
+  border-top: 1px solid #e6cbb4;
+  font-size: 20px;
+}
+
+.groupTherapy h4 + p {
+  max-width: 820px;
+  margin-bottom: 0;
+}
+
 .groupTherapy ul {
   columns: 2;
   column-gap: 42px;
+  margin: 18px 0 36px;
+  padding-left: 22px;
 }
 
 .groupTherapy li {
   break-inside: avoid;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+.groupTherapy .placeholder {
+  margin-top: 4px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .sectionHead h2,
@@ -681,6 +707,11 @@ h3,
   .groupTherapy ul {
     columns: 1;
     padding-left: 20px;
+  }
+
+  .groupTherapy h4 {
+    margin-top: 30px;
+    padding-top: 24px;
   }
 
   .programs article:hover {
