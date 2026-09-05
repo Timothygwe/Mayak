@@ -37,7 +37,7 @@ export default function Home() {
 
       <section className="hero" id="top"><div className="wrap heroGrid">
         <div className="heroCopy"><p className="eyebrow">Сообщество взаимопомощи при депрессии</p><h1>Маяк<br/><em>по<span className="doubleDGap">д</span>держки</em></h1><p className="lead">Мы — люди, которые делятся опытом, силой и надеждой. Сообщество создано и курируется практикующим психологом, прошедшим собственный путь выздоровления.</p><div className="heroActions"><a className="button primary" href="#community">Бесплатная группа</a><a className="button ghost" href="#therapy">Профессиональная терапия</a></div><p className="privacy">Бережно · конфиденциально · без осуждения</p></div>
-        <div className="visual"><div className="logoCircle"><img src="/mayak-logo.jpg" alt="Логотип Маяк поддержки — маяк среди волн"/></div><p>Мы держим свет включённым<br/>специально для вас</p></div>
+        <div className="visual"><div className="logoCircle"><img src="/mayak-logo.jpg" alt="Логотип Маяк поддержки — маяк среди волн"/></div></div>
       </div></section>
 
       <section className="wrap directions" aria-label="Направления помощи">
