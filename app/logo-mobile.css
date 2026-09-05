@@ -51,6 +51,48 @@ body {
   z-index: 1;
 }
 
+.doubleDGap {
+  display: inline-block;
+  margin-right: 0.075em;
+}
+
+.heroCopy .eyebrow,
+.hero h1,
+.hero .lead,
+.heroActions,
+.hero .privacy,
+.hero .visual {
+  animation: hero-enter 760ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.hero h1 {
+  animation-delay: 90ms;
+}
+
+.hero .lead {
+  animation-delay: 170ms;
+}
+
+.heroActions {
+  animation-delay: 250ms;
+}
+
+.hero .privacy {
+  animation-delay: 320ms;
+}
+
+.hero .visual {
+  animation-delay: 180ms;
+}
+
+.directions .direction:first-child {
+  animation: direction-enter 680ms 430ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+.directions .direction:nth-child(2) {
+  animation: direction-enter 680ms 540ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
 .button,
 .navCta {
   transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
@@ -70,7 +112,7 @@ body {
 }
 
 .logoCircle {
-  animation: lighthouse-float 6s ease-in-out infinite;
+  animation: lighthouse-float 6s ease-in-out infinite, lighthouse-glow 3.8s ease-in-out infinite;
 }
 
 .direction {
@@ -201,6 +243,41 @@ body {
 
   50% {
     transform: translateY(-10px) rotate(0.4deg);
+  }
+}
+
+@keyframes lighthouse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 14px rgba(255, 249, 239, 0.58), 0 18px 45px rgba(99, 63, 50, 0.08);
+  }
+
+  50% {
+    box-shadow: 0 0 0 20px rgba(255, 249, 239, 0.34), 0 24px 58px rgba(224, 122, 95, 0.16);
+  }
+}
+
+@keyframes hero-enter {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes direction-enter {
+  from {
+    opacity: 0;
+    transform: translateY(26px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -341,7 +418,14 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .logoCircle {
+  .logoCircle,
+  .heroCopy .eyebrow,
+  .hero h1,
+  .hero .lead,
+  .heroActions,
+  .hero .privacy,
+  .hero .visual,
+  .directions .direction {
     animation: none;
   }
 
