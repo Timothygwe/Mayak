@@ -240,6 +240,20 @@ h3,
   content: "";
 }
 
+.programs .button::after {
+  animation: program-button-shine 3.12s ease-in-out infinite;
+}
+
+@keyframes program-button-shine {
+  0%, 45% {
+    transform: rotate(18deg) translateX(-220%);
+  }
+
+  72%, 100% {
+    transform: rotate(18deg) translateX(720%);
+  }
+}
+
 .programs article:hover {
   transform: translateY(-5px);
   box-shadow: 0 24px 55px rgba(99, 63, 50, 0.18);
@@ -1202,6 +1216,10 @@ footer {
   .scrollProgress,
   .faq details[open] p,
   .credentialsTeaser .button {
+    animation: none;
+  }
+
+  .programs .button::after {
     animation: none;
   }
 }
