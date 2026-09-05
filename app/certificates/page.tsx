@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { spaceSupport } from "../support-text";
 
 export const metadata: Metadata = {
   title: "Образование и сертификаты",
@@ -17,7 +18,7 @@ export default function CertificatesPage() {
       <header className="nav wrap certificatesNav">
         <a className="brand" href="/" aria-label="Вернуться на главную страницу">
           <span className="brandMark">М</span>
-          <span>Маяк поддержки</span>
+          <span>{spaceSupport("Маяк поддержки")}</span>
         </a>
         <a className="navCta" href="/">← На главную</a>
       </header>
@@ -44,16 +45,16 @@ export default function CertificatesPage() {
 
       <section className="certificatesReturn">
         <div className="wrap">
-          <p className="eyebrow">Маяк поддержки</p>
+          <p className="eyebrow">{spaceSupport("Маяк поддержки")}</p>
           <h2>Вернуться к сообществу</h2>
-          <p>Узнайте о бесплатных встречах, поддержке и программах терапии.</p>
+          <p>{spaceSupport("Узнайте о бесплатных встречах, поддержке и программах терапии.")}</p>
           <a className="button primary" href="/">На главную страницу →</a>
         </div>
       </section>
 
       <a className="backToTop" href="#top" aria-label="Вернуться наверх">↑</a>
       <footer className="wrap certificatesFooter">
-        <div className="brand"><span className="brandMark">М</span><span>Маяк поддержки</span></div>
+        <div className="brand"><span className="brandMark">М</span><span>{spaceSupport("Маяк поддержки")}</span></div>
         <p>Образование и сертификаты</p>
         <p>© 2026 · mayak-podderzhki.ru</p>
       </footer>
